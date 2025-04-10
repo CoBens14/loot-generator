@@ -1,13 +1,14 @@
 # Project: Loot Generator
 
-Authors: (_TODO: fill in names here!_)
+Authors: Colton Benson
 
 ## Resources
 
-*   (_TODO: fill in resources here!_)
-*   ...
-*   ...
+*   Credits to Peter-Michael Osera for project guidelines and instructions.
+*   Credit to VSCode for serving as the IDE for this project.
+*   Tested using Java Version 23.
 
 ## Revision Log
 
-*   (_TODO: fill in your changes to your project here!_)
+*  April 8th: Implemented Monster and Armor Class
+*  April 9th: Implements Affixes, Treasure, and Loot Generator
