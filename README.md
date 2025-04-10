@@ -12,3 +12,4 @@ Authors: Colton Benson
 
 *  April 8th: Implemented Monster and Armor Class
 *  April 9th: Implements Affixes, Treasure, and Loot Generator
+*  April 10th: Small Changes and Style Fixes
