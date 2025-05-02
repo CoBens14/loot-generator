@@ -6,6 +6,9 @@ import java.util.HashMap;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Armor Class
+ */
 public class Armor {
 
     private class Pair {
@@ -13,6 +16,9 @@ public class Armor {
         int max;
         /**
          * Constructs a pair of ints
+         * 
+         * @param min the min value of the stat
+         * @param max the max value of the stat
          */
         public Pair(int min, int max) {
             this.min = min;
@@ -51,7 +57,7 @@ public class Armor {
      */
     public Armor() throws FileNotFoundException {
         armorMap = new HashMap<String, Pair>();
-        File file = new File(LootGenerator.DATA_SET + "armor.txt");
+        File file = new File(LootGenerator.DATA_SET + "/armor.txt");
         Scanner in = new Scanner(file);
         readArmorData(in);
     }
@@ -64,7 +70,7 @@ public class Armor {
     public int computeBaseStat(String armor) {
         Random randomGen = new Random();
         Pair armorPair = armorMap.get(armor);
-        int  ret = randomGen.nextInt(armorPair.max - armorPair.min + 1) + armorPair.min;
+        int ret = randomGen.nextInt(armorPair.max - armorPair.min + 1) + armorPair.min;
         return ret;
     }
     

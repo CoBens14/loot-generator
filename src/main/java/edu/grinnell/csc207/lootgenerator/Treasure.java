@@ -6,6 +6,9 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.TreeMap;
 
+/**
+ * Treasure Class
+ */
 public class Treasure {
     TreeMap<String, String[]> treasureMap;
 
@@ -50,7 +53,7 @@ public class Treasure {
                 cur = line.charAt(i);
             }
             three = three + cur;
-            treasureMap.put(name, new String[] { one, two, three });
+            treasureMap.put(name, new String[] {one, two, three });
         }
     }
 
@@ -61,8 +64,7 @@ public class Treasure {
      */
     public Treasure() throws FileNotFoundException {
         treasureMap = new TreeMap<String, String[]>();
-        File file = new File(
-                "C:\\Users\\benso_uft\\OneDrive\\Grinnell Stuff\\CS 207\\Homework\\loot-generator-main\\loot-generator-main\\data\\small\\TreasureClassEx.txt");
+        File file = new File(LootGenerator.DATA_SET + "/TreasureClassEx.txt");
         Scanner in = new Scanner(file);
         readTreasureData(in);
     }

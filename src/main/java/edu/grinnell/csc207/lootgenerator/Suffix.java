@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Suffix Class
+ */
 public class Suffix {
     private ArrayList<Affix> suffixList;
 
@@ -57,8 +60,7 @@ public class Suffix {
      */
     public Suffix() throws FileNotFoundException {
         suffixList = new ArrayList<Affix>();
-        File file = new File(
-                "C:/Users/benso_uft/OneDrive/Grinnell Stuff/CS 207/Homework/loot-generator-main/loot-generator-main/data/small/MagicSuffix.txt");
+        File file = new File(LootGenerator.DATA_SET + "/MagicSuffix.txt");
         Scanner in = new Scanner(file);
         readsuffixes(in);
     }

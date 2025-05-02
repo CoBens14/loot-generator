@@ -2,8 +2,12 @@ package edu.grinnell.csc207.lootgenerator;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
+import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Monsters Class
+ */
 public class Monsters {
     private HashMap<String, String> monsterMap;
 
@@ -47,17 +51,18 @@ public class Monsters {
      */
     public Monsters() throws FileNotFoundException {
         monsterMap = new HashMap<String, String>();
-        File file = new File("C:/Users/benso_uft/OneDrive/Grinnell Stuff/CS 207/Homework/loot-generator-main/loot-generator-main/data/small/monstats.txt");
+        File file = new File(LootGenerator.DATA_SET + "/monstats.txt");
         Scanner in = new Scanner(file);
         readMonsterData(in);
     }
 
     /**
-     * @returna a random monster as a String
+     * @return a random monster as a String
      */
     public String getRandomMonster() {
-        int i = 0; // replace with random int 
-        return (String)monsterMap.keySet().toArray()[i];
+        Random randomGen = new Random();
+        int val = randomGen.nextInt(monsterMap.size());
+        return (String) monsterMap.keySet().toArray()[val];
     }
 
     /**

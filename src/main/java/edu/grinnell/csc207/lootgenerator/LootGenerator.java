@@ -4,9 +4,12 @@ import java.io.FileNotFoundException;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Loot Generator Class
+ */
 public class LootGenerator {
     /** The path to the dataset (either the small or large set). */
-    public static final String DATA_SET = "data/small";
+    public static final String DATA_SET = "data/large";
 
     /**
      * Asks user to if they want to fight again

@@ -2,6 +2,9 @@ package edu.grinnell.csc207.lootgenerator;
 
 import java.util.Random;
 
+/**
+ * Affix Class
+ */
 public class Affix {
     private String name;
     private String stat;
@@ -31,7 +34,7 @@ public class Affix {
      */
     public String statToString() {
         Random randomGen = new Random();
-        int  val = randomGen.nextInt(max - min + 1) + min;
+        int val = randomGen.nextInt(max - min + 1) + min;
         return "" + val + " " + stat; 
     }
 

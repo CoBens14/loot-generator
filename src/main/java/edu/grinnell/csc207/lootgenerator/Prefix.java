@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Prefix Class
+ */
 public class Prefix {
     private ArrayList<Affix> prefixList;
     
@@ -44,7 +47,7 @@ public class Prefix {
      */
     public Prefix() throws FileNotFoundException {
         prefixList = new ArrayList<Affix>();
-        File file = new File("C:/Users/benso_uft/OneDrive/Grinnell Stuff/CS 207/Homework/loot-generator-main/loot-generator-main/data/small/MagicPrefix.txt");
+        File file = new File(LootGenerator.DATA_SET + "/MagicPrefix.txt");
         Scanner in = new Scanner(file);
         readPrefixes(in);
     }
