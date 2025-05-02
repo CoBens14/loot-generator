@@ -9,7 +9,7 @@ Authors: Colton Benson
 *   Tested using Java Version 23.
 
 ## Revisions for Final Turn In
-* Committed style changes that were forgotten on initial turn in
+* Committed style change files that were forgotten on initial turn in
 
 ## Revision Log
 
